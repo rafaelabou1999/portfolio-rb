@@ -42,7 +42,7 @@ function App() {
             
             
             </div>
-              <img src="https://i.etsystatic.com/18836924/r/il/9932f8/4807616307/il_570xN.4807616307_cjeo.jpg" width="400" className='imgBanner'/>        
+              <img src="https://i.etsystatic.com/18836924/r/il/9932f8/4807616307/il_570xN.4807616307_cjeo.jpg" width="400" className='imgBanner' />        
             <div >
             
             </div>

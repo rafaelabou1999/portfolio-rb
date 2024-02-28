@@ -1,0 +1,9 @@
+.techStack{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: 6rem;
+}
+
