@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <nav className='menu flex flex-row justify-around pt-[1.3rem] '>
+      <nav className='menu flex flex-row pt-[1.3rem] z-10'>
         <div className="logo flex flex-row items-center ">
             <div className='text-[#9466FE] text-[1.1rem] font-[700]'>&lt;/&gt;</div>
             <div className="letter">R</div>
@@ -22,16 +22,16 @@ function App() {
             <div className="letter">l</div>
             <div className="letter">a</div>
           </div>
-          <ul className='nav flex flex-row text-[#D6D6DC] font-[600] gap-[8%]'>
-              <li><a href='#'>Home</a></li>
-              <li><a href='#'>Sobre</a></li>
-              <li><a href='#'>Projetos</a></li>
-              <li><a href='#'>Resume</a></li>
-              <li><a href='#'>Contato</a></li>
+          <ul className='nav flex flex-row text-[#D6D6DC] font-[600] gap-[8%] z-20'>
+              <li><a href='home'>Home</a></li>
+              <li><a href='about'>Sobre</a></li>
+              <li><a href='projects'>Projetos</a></li>
+              <li><a href='resume'>Resume</a></li>
+              <li><a href='contact'>Contato</a></li>
             </ul>
         
       </nav>
-      <main className=' '>
+      <main className='mt-[8%]'>
         <div className='relative mt-[5%] flex flex-row items-center justify-center gap-[5%]'>
             <div className='w-[430px]'>
               <p className='text-[#D6D6DC] text-[1.7rem]'>👋🏻 Olá, o meu nome é</p>

@@ -21,7 +21,7 @@ const Projects = () => {
 
            <div>
             <div className="project flex flex-row justify-center items-center ">
-                <img src={SiteMedico} className='w-[35rem] h-[20rem] object-contain'/>
+                <img src={SiteMedico} className='w-[40rem] h-[20rem] object-cover'/>
                 <div className="w-[15rem] ms-[3%]">
                     <h2 className='text-[#9466FE] font-[600] text-[1.6rem]'>Site para Médico</h2>
                     <div className="line bg-[#9466FE] h-[.1vh] w-[6rem] mb-[5%]"></div>
@@ -37,8 +37,8 @@ const Projects = () => {
                 </div>
                 
            </div>
-            <div className="project flex flex-row justify-center items-center ">
-                <img src={ReactSite} className='w-[35rem] h-[20rem] object-contain'/>
+            <div className="project flex flex-row justify-center items-center mt-[5%] ">
+                <img src={ReactSite} className='w-[40rem] h-[20rem] object-cover'/>
                 <div className="w-[15rem] ms-[3%]">
                     <h2 className='text-[#9466FE] font-[600] text-[1.6rem]'>Primeiro site em React</h2>
                     <div className="line bg-[#9466FE] h-[.1vh] w-[6rem] mb-[5%]"></div>
