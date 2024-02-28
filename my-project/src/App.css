@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(-45deg, #3a2864, #151616, #362f46, #151616);
+  background-size: 400% 400%;
+  font-family: "Poppins", sans-serif;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.logo{
+  text-align: center;
+  color:rgb(214, 214, 220);
+}
+
+.letter{
+  font-weight: 800;
+  transition: all .5s ease-in-out;
+  color:rgb(214, 214, 220);
+  transform: translate(0,0);
+  font-size: 1rem;
+}
+
+.letter:hover{
+  transform: translate(0,-.3rem);
+  color:#9466FE;
+}
+
+main img{
+  object-fit: cover;
+}
+
+.imgBanner{
+  filter: grayscale(70%);
+  border-radius: 50%;
+}
