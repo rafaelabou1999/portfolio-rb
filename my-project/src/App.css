@@ -50,4 +50,9 @@ main img{
 .imgBanner{
   filter: grayscale(70%);
   border-radius: 50%;
+  transition: all .4s ease-in-out;
+}
+
+.imgBanner:hover{
+  filter: grayscale(40%);
 }
