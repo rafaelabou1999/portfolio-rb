@@ -3,6 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 import About from './About';
 import Skills from './Skills';
+import Projects from './Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
   return (
     <div>
-      <nav className='menu flex flex-row justify-around pt-[1.3rem]'>
+      <nav className='menu flex flex-row justify-around pt-[1.3rem] '>
         <div className="logo flex flex-row items-center ">
             <div className='text-[#9466FE] text-[1.1rem] font-[700]'>&lt;/&gt;</div>
             <div className="letter">R</div>
@@ -57,6 +58,7 @@ function App() {
         
         <About/> 
         <Skills/>
+        <Projects/>
       </main>     
      
     </div>
