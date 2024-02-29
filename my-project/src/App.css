@@ -73,10 +73,38 @@ main img{
   filter: grayscale(40%);
 }
 
-@media screen and (max-width:1374px){
+@media screen and (max-width:1454px){
   .menu{
-    width: 70%;
+    width: 76%;
     gap:45%;
+  }
+
+  .logo{
+    padding-bottom: .5rem !important;
+  }
+
+  .nav{
+    padding-top: .1% !important;
+  }
+  .banner{
+   margin-top: 6% !important;
+   gap: 1% !important;
+  }
+  .imgBanner{
+    width:max(25vw, 280px);
+    height:max(28vh, 310px) !important;
+  }
+
+  .bannerText p{
+    font-size: 1.8rem !important;
+  }
+
+  .bannerText h2{
+    font-size: 1.9rem;
+  }
+
+  .gradient{
+    font-size: 1.6rem !important;
   }
 }
 
@@ -85,5 +113,101 @@ main img{
     width: 80%;
     gap:45%;
   }
+
+ 
 }
 
+@media  screen and (max-width:850px) {
+  .bannerText{
+    margin-left: 5% !important;
+    margin-right:-10%;
+  }
+
+  .banner img{
+    display: none;
+  }
+
+  .banner{
+    background-image: url("https://i.etsystatic.com/18836924/r/il/9932f8/4807616307/il_570xN.4807616307_cjeo.jpg");
+    background-size: cover ;
+    height:350px;
+    width:80%;
+    margin:0 auto;
+    filter: grayscale(70%);
+    position: relative;
+  }
+  .banner{
+    z-index: 10;
+    margin-top: 14% !important;
+    position: relative;
+  } 
+
+  .bannerText{
+    background-color: rgba(58, 31, 80, 0.699);
+    position: absolute;
+    height:350px;
+    width:100% !important;
+    bottom:0;
+    top:0; 
+    right:0% !important;
+    left:-5% !important;
+    padding-top:calc(290px / 2 ) !important;
+    
+    
+    
+  }
+
+  .bannerText p, .bannerText h2, .gradient{
+    text-align: center;
+    
+  }
+
+  .bannerText h2{
+    color:rgb(185, 150, 250);
+    filter: drop-shadow(0 0 0.40rem #9466FE);
+   
+  }
+
+  .bannerText p{
+    display: none;
+  }
+  .line{
+    left:0 !important;
+    bottom:-100% !important;
+  }
+
+  .icons{
+    position: fixed !important;
+    bottom:0;
+    left:10%;
+  }
+  
+  .icon1{
+    bottom:-50% !important;
+    left:-2% !important;
+  }
+
+  .icon2{
+    bottom:-40% !important;
+    left:-2% !important;
+  }
+}
+
+@media screen and (max-width:600px){
+  .banner{
+    margin-top:25% !important;
+  }
+  .bannerText{
+    display: block;
+    padding-top:20%;
+  }
+  
+  .bannerText h2{
+    font-size: max(4vw, 20px);
+    
+  }
+
+  .gradient{
+    font-size: max(3.5vw, 18px) !important;
+  }
+}

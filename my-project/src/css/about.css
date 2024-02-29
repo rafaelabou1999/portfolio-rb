@@ -10,3 +10,63 @@ img:hover{
 p{
     line-height: 1.8;
 }
+
+@media screen and (max-width:1440px){
+    img{
+        width:max(30vw, 350px);
+        height: max(30vw, 350px) !important;
+        object-fit: cover;
+    }
+
+    .aboutTxt{
+        width: 150% !important;
+      }
+}
+
+@media screen and (max-width:1040px){
+    img{
+        width:max(30vw, 350px);
+        height: max(30vw, 450px) !important;
+        object-fit: cover; 
+    }
+  .aboutTxt{
+    width: 130% !important;
+  }
+}
+
+@media screen and (max-width:950px){
+   
+
+    img{
+        width:max(30vw, 300px);
+        height: max(30vw, 300px) !important;
+        object-fit: cover; 
+        margin-top:8%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    #about{
+        flex-direction: column;
+        margin-left:30%;
+    }
+
+    #about img{
+        margin-left: -10% !important ;
+    }
+
+    .aboutTxt{
+        width: 300% !important;
+        margin-left: -40% !important;
+      }
+
+    .aboutH2{
+        margin-top: 18%;
+        text-align: center;
+        width:200%;
+    }
+
+    .line1{
+        margin-left: 70%;
+    }
+}

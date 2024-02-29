@@ -38,11 +38,11 @@ function App() {
         </div>
       </nav>
       <main className='mt-[8%]' >
-        <div className='relative mt-[5%] flex flex-row items-center justify-center gap-[5%]'>
-            <div className='w-[430px]'>
+        <div className='banner relative mt-[5%] flex flex-row items-center justify-center gap-[5%]'>
+            <div className='bannerText w-[430px]'>
               <p className='text-[#D6D6DC] text-[1.7rem]'>👋🏻 Olá, o meu nome é</p>
               <h2 className='name font-[800] text-[2.2rem] bg-gradient-to-r from-[#9466FE] to-[#3378FF] text-transparent bg-clip-text'>Rafaela Bourdette</h2>
-              <div  className='text-[2rem] font-[400] text-[#fff]'>
+              <div  className='gradient text-[2rem] font-[400] text-[#fff]'>
               <Typewriter words={["Desenvolvedora Front-End"]} />
             
               </div>
@@ -53,9 +53,9 @@ function App() {
             <div >
             
             </div>
-            <div className='p-[1%] w-[20%] flex flex-col gap-[14%] justify-center items-center  fixed bottom-[5%] left-[0%]'>
-              <FontAwesomeIcon icon={faGithub} className='text-[1.5rem] text-[#fff]  pt-[1.5%] fixed bottom-[26%] left-[8.6%]'/>
-            <FontAwesomeIcon icon={faLinkedin} className='text-[1.5rem] text-[#fff]  pt-[1.5%] fixed bottom-[22%] left-[8.6%]'/>
+            <div className='icons p-[1%] w-[20%] flex flex-col gap-[14%] justify-center items-center  fixed bottom-[5%] left-[0%]'>
+              <FontAwesomeIcon icon={faGithub} className='icon1 text-[1.5rem] text-[#fff]  pt-[1.5%] fixed bottom-[26%] left-[8.6%]'/>
+            <FontAwesomeIcon icon={faLinkedin} className='icon2 text-[1.5rem] text-[#fff]  pt-[1.5%] fixed bottom-[22%] left-[8.6%]'/>
             <div className="line h-[20vh] w-[.2rem] bg-[#fff]  fixed bottom-[0%] left-[9%]">
 
             </div>
