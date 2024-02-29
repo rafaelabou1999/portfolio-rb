@@ -11,7 +11,7 @@ body{
   background-size: 400% 400%;
   font-family: "Poppins", sans-serif;
   animation: gradient 15s ease infinite;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 @keyframes gradient {
@@ -27,8 +27,8 @@ body{
 }
 
 .menu{
-  position: fixed;
-  top:2%;
+  position: fixed !important;
+  top:1%;
   left:50%;
   transform: translateX(-50%);
   gap: 50%;
@@ -72,3 +72,18 @@ main img{
 .imgBanner:hover{
   filter: grayscale(40%);
 }
+
+@media screen and (max-width:1374px){
+  .menu{
+    width: 70%;
+    gap:45%;
+  }
+}
+
+@media screen and (max-width:1040px) {
+  .menu{
+    width: 80%;
+    gap:45%;
+  }
+}
+

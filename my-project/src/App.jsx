@@ -4,6 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 function App() {
@@ -11,8 +12,8 @@ function App() {
 
   return (
     <div>
-      <nav className='menu flex flex-row pt-[1.3rem] z-10'>
-        <div className="logo flex flex-row items-center ">
+      <nav className='menu flex flex-row pt-[1.3rem] z-10 relative'>
+        <div className="logo flex flex-row items-center lg:pb-0 pb-[2%]">
             <div className='text-[#9466FE] text-[1.1rem] font-[700]'>&lt;/&gt;</div>
             <div className="letter">R</div>
             <div className="letter">a</div>
@@ -22,16 +23,21 @@ function App() {
             <div className="letter">l</div>
             <div className="letter">a</div>
           </div>
-          <ul className='nav flex flex-row text-[#D6D6DC] font-[600] gap-[8%] z-20'>
-              <li><a href='home'>Home</a></li>
-              <li><a href='about'>Sobre</a></li>
-              <li><a href='projects'>Projetos</a></li>
-              <li><a href='resume'>Resume</a></li>
-              <li><a href='contact'>Contato</a></li>
+          <ul className='nav scroll-smooth flex flex-row text-[#D6D6DC] font-[600] gap-[8%] z-20 '>
+              <li className='hidden lg:inline-block md:hidden'><a href='#about'>Sobre</a></li>
+              <li className='hidden lg:inline-block md:hidden'><a href='#projects'>Projetos</a></li>
+              <li className='hidden lg:inline-block md:hidden'><a href='#resume'>Resume</a></li>
+              <li className='hidden lg:inline-block md:hidden'><a href='#contact'>Contato</a></li>
             </ul>
-        
+        <div className='md:block lg:hidden block absolute right-[7%] mt-[.5%] '>
+          <div className="burgerLine w-[1.8rem] h-[.15vh]  bg-white"></div>
+          <div className='mb-[23%]'></div>
+          <div className="burgerLine w-[1.2rem] h-[.15vh] bg-white"></div>
+          <div className='mb-[23%]'></div>
+          <div className="burgerLine  w-[1.8rem] h-[.15vh]  bg-white"></div>
+        </div>
       </nav>
-      <main className='mt-[8%]'>
+      <main className='mt-[8%]' >
         <div className='relative mt-[5%] flex flex-row items-center justify-center gap-[5%]'>
             <div className='w-[430px]'>
               <p className='text-[#D6D6DC] text-[1.7rem]'>👋🏻 Olá, o meu nome é</p>
@@ -57,10 +63,11 @@ function App() {
         </div>
         
         <About/> 
-        <Skills/>
+        <Skills />
         <Projects/>
+        <Contact />
       </main>     
-     
+     <footer className=' text-center text-white bg-[#322453] p-[.5%] mt-[10%]'>Desenvolvido por Rafaela Bourdette 2024</footer>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 const Skills = () => {
     return(
-        <div className="mt-[10%]">
+        <div id="skills" className="mt-[10%]">
             <h2 className=' text-center font-[700] text-[1.8rem] text-[#9466FE] drop-shadow-lg'>Habilidades</h2>
            <div className="back flex flex-row justify-center items-center ] pb-[3%]">
             <div className="line h-[.3vh] w-[2.5rem] bg-[#9466FE] me-[.3%]"></div>

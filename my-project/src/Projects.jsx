@@ -8,7 +8,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = () => {
     return(
-        <div>
+        <div id="projects">
             <div className='mt-[35%] flex flex-col justify-center'>
               <h2 className=' text-center font-[700] text-[1.8rem] text-[#9466FE] drop-shadow-lg'>Projetos</h2>
               <div className="back flex flex-row justify-center items-center ] pb-[3%]">
@@ -53,7 +53,7 @@ const Projects = () => {
                 </div>
                 
            </div>
-         <div className='mt-[2%] mb-[30%]'>
+         <div className='mt-[2%] mb-[15%]'>
             <button className=' bg-[#9466FE] pt-[1%] pb-[1%] pe-[2%] ps-[2%]'><a href="https://github.com/rafaelabou1999" className='text-[#141414] font-[600]'>Veja mais</a></button>
          </div>
         </div>

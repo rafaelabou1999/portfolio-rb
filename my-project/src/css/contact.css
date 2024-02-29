@@ -1,0 +1,6 @@
+.cont{
+    filter: drop-shadow(0 0 0.2rem #9466FE);
+    background-color: #322453;
+    color:rgba(206, 203, 203, 0.89) !important;
+    margin-top:10% !important;
+}

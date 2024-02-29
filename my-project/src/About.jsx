@@ -3,7 +3,7 @@ import './css/about.css';
 import Profile from './images/profile.jpg';
 const About = () => {
   return(
-    <div className="flex flex-row gap-[2%] justify-center mt-[10%]">
+    <div id="about" className="flex flex-row gap-[2%] justify-center mt-[10%]">
         <img src={Profile} width="400"/>
         <div className="text-[#fff] w-[30%]">
             <div>
