@@ -76,13 +76,23 @@ main img{
 @media screen and (max-width:1454px){
   .menu{
     width: 76%;
+    height:4rem;
     gap:45%;
+    position: relative;
   }
 
   .logo{
-    padding-bottom: .5rem !important;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
   }
 
+  .menuBurger{
+    position: absolute;
+    right:7%;
+    top:50% !important;
+    transform: translateY(-50%) !important;
+  }
   .nav{
     padding-top: .1% !important;
   }
@@ -108,12 +118,26 @@ main img{
   }
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (min-width:1000px) {
   .menu{
-    width: 80%;
+    width: 76%;
+    height:4rem;
     gap:45%;
+    position: relative;
   }
 
+  .logo{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
+  .nav{
+    position: absolute;
+    right:12%;
+    top:50% !important;
+    transform: translateY(-50%) !important;
+  }
  
 }
 
@@ -127,6 +151,11 @@ main img{
     display: none;
   }
 
+  .icons{
+    display: none !important;
+
+  }
+  
   .banner{
     background-image: url("https://i.etsystatic.com/18836924/r/il/9932f8/4807616307/il_570xN.4807616307_cjeo.jpg");
     background-size: cover ;
@@ -194,6 +223,7 @@ main img{
 }
 
 @media screen and (max-width:600px){
+ 
   .banner{
     margin-top:25% !important;
   }

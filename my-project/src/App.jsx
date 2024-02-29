@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <nav className='menu flex flex-row pt-[1.3rem] z-10 relative'>
-        <div className="logo flex flex-row items-center lg:pb-0 pb-[2%]">
+        <div className="logo flex flex-row items-center lg:pb-0 pb-[0%]">
             <div className='text-[#9466FE] text-[1.1rem] font-[700]'>&lt;/&gt;</div>
             <div className="letter">R</div>
             <div className="letter">a</div>
@@ -29,7 +29,7 @@ function App() {
               <li className='hidden lg:inline-block md:hidden'><a href='#resume'>Resume</a></li>
               <li className='hidden lg:inline-block md:hidden'><a href='#contact'>Contato</a></li>
             </ul>
-        <div className='md:block lg:hidden block absolute right-[7%] mt-[.5%] '>
+        <div className='menuBurger md:block lg:hidden block   '>
           <div className="burgerLine w-[1.8rem] h-[.15vh]  bg-white"></div>
           <div className='mb-[23%]'></div>
           <div className="burgerLine w-[1.2rem] h-[.15vh] bg-white"></div>
