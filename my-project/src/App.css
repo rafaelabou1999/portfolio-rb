@@ -97,6 +97,17 @@ main img{
   .nav{
     padding-top: .1% !important;
   }
+
+  .icon1, .icon2{
+    left:3% !important;
+  }
+  
+  .line{
+    left:3.8% !important;
+    z-index: -10 !important;
+  }
+
+ 
   .banner{
    margin-top: 6% !important;
    gap: 1% !important;

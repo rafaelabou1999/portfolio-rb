@@ -42,3 +42,47 @@
     opacity: 1;
 }
 
+
+/*************TECHSTACK  RESPONSIVE*************/
+@media screen and (max-width:1320px) {
+    .techStack{
+        grid-template-columns:  18rem 18rem 18rem;
+        grid-template-rows: 18rem;
+       
+    }
+}
+
+@media screen and (max-width:1049px) {
+    .techStack{
+        grid-template-columns:  15rem 15rem 15rem;
+        grid-template-rows: 15rem;
+    }
+}
+
+@media screen and (max-width:730px){
+    .techStack{
+        grid-template-columns:  15rem 15rem;
+        grid-template-rows: 15rem 15rem;
+    } 
+}
+
+@media screen and (min-width:800px) and (max-width:1064px){
+  .techStack{
+    margin-left: 2.8%;
+  }
+}
+
+@media screen and (max-width:470px) {
+    .techStack{
+        grid-template-columns:  15rem;
+        grid-template-rows:repeat(6, 15rem);
+    } 
+
+    .item{
+        margin-left:-2%;
+        width:13rem;
+        height:13rem;
+    }
+    
+}
+/*******************************************/
