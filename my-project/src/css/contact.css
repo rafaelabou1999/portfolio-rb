@@ -5,6 +5,10 @@
     margin-top:10% !important;
 }
 
+#contact img{
+    z-index: -1 !important;
+}
+
 @media  screen and (max-width:700px) {
     .contactMain{
         margin-top: 30% !important;

@@ -1,5 +1,5 @@
 button{
-    filter: drop-shadow(0 0 0.40rem #9466FE);
+    filter: drop-shadow(0 0 0.22rem #9466FE);
     padding: 1% 2%;
     position: absolute;
     left:50%;
@@ -31,7 +31,7 @@ button{
     }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:470px){
     #projects{
         margin-top: 190vh !important;
     }
@@ -67,7 +67,7 @@ button{
         height: .3rem !important;
         width: 23rem;
         display: block;
-        filter: drop-shadow(0 0 0.40rem #9466FE);
+        filter: drop-shadow(0 0 1.80px #9466FE);
         margin: 5% auto;
     }
    

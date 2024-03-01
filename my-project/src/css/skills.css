@@ -12,6 +12,7 @@
     grid-template-columns:  24rem 24rem 24rem;
     grid-template-rows: 20rem;
     margin-left: 5.5%;
+    z-index: -1 !important;
 }
 
 
@@ -64,6 +65,10 @@
         grid-template-columns:  15rem 15rem;
         grid-template-rows: 15rem 15rem;
     } 
+
+    #skills{
+        margin-top: 18%;
+    }
 }
 
 @media screen and (min-width:800px) and (max-width:1064px){

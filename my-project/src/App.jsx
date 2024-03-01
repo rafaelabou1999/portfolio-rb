@@ -7,12 +7,13 @@ import Projects from './Projects';
 import Contact from './Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 function App() {
 
 
   return (
     <div>
-      <nav className='menu flex flex-row pt-[1.3rem] z-10 relative'>
+      <nav className='menu flex flex-row pt-[1.3rem] z-8 relative'>
         <div className="logo flex flex-row items-center lg:pb-0 pb-[0%]">
             <div className='text-[#9466FE] text-[1.1rem] font-[700]'>&lt;/&gt;</div>
             <div className="letter">R</div>
@@ -26,7 +27,7 @@ function App() {
           <ul className='nav scroll-smooth flex flex-row text-[#D6D6DC] font-[600] gap-[8%] z-20 '>
               <li className='hidden lg:inline-block md:hidden'><a href='#about'>Sobre</a></li>
               <li className='hidden lg:inline-block md:hidden'><a href='#projects'>Projetos</a></li>
-              <li className='hidden lg:inline-block md:hidden'><a href='#resume'>Resume</a></li>
+              <li className='hidden lg:inline-block md:hidden'><a href='#skills'>Habilidades</a></li>
               <li className='hidden lg:inline-block md:hidden'><a href='#contact'>Contato</a></li>
             </ul>
         <div className='menuBurger md:block lg:hidden block   '>
@@ -61,13 +62,22 @@ function App() {
             </div>
           </div>  
         </div>
-        
+        <div className="openMenu bg-[#1d162eee] fixed top-0 bottom-0 right-0 left-[70%] z-11">
+        <FontAwesomeIcon icon={faXmark} className='absolute right-[9%] top-[2%] text-[2rem] text-[#dbdad7]'/>
+         <ul className='menuOpenResp flex flex-col text-[#dbdad7] font-[600] gap-[8%] z-20 ms-[15%] mt-[25%]'>
+              <li className='mb-[8%] text-[1.4rem]'><a href='#about'>Sobre</a></li>
+              <li className='mb-[8%] text-[1.4rem]'><a href='#projects'>Projetos</a></li>
+              <li className='mb-[8%] text-[1.4rem]'><a href='#skills'>Habilidades</a></li>
+              <li className='text-[1.4rem]'><a href='#contact'>Contato</a></li>
+            </ul>
+
+        </div>
         <About/> 
         <Skills />
         <Projects/>
         <Contact />
       </main>     
-     <footer className=' text-center text-[#dfe1e6] bg-[#322453] p-[1%] mt-[10%]'>Desenvolvido por Rafaela Bourdette 2024</footer>
+     <footer className='  text-center text-[#dfe1e6] bg-[#322453] p-[1%] mt-[10%]'>Desenvolvido por Rafaela Bourdette 2024</footer>
     </div>
   )
 }

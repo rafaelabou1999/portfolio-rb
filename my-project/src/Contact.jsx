@@ -5,7 +5,7 @@ import './css/contact.css'
 const Contact = () => {
     return(
         <div id="contact" className="">
-            <div className="contactMain flex flex-row gap-[5%] justify-center gap-[10%]">
+            <div className="contactMain flex flex-row gap-[5%] justify-center gap-[10%] z-6">
                 <div className="text-white text-[1.1rem]">
                     <h2 className='font-[700] text-[1.8rem] text-[#9466FE] drop-shadow-lg'>Contato</h2>
                     <div className="line1 h-[.1vh] w-[5rem] bg-[#9466FE] mb-[5%]"></div>
@@ -30,7 +30,7 @@ const Contact = () => {
                     
                 </div>
                 
-                <img src="https://i.pinimg.com/736x/8f/40/09/8f400923a0e8b08fd4c16294551dbd87.jpg" className="w-[450px] object-cover"/>
+                <img src="https://i.pinimg.com/736x/8f/40/09/8f400923a0e8b08fd4c16294551dbd87.jpg" className="w-[450px] object-cover z-5"/>
             </div>
         </div>
     )
