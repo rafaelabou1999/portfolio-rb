@@ -49,13 +49,40 @@ button{
 
 @media screen and (max-width:700px) {
     .project{
-        flex-direction: row !important;
+        flex-direction: column !important;
     }
     .project img{
         width:max(45vw, 350px);
         height:max(9vh, 250px) !important;
         object-fit: cover;
-        margin-bottom: 8%;
+        margin-bottom: 2%;
     }
+
+    .box{
+        margin-right:20% !important;
+    }
+
+    .lineBox{
+        background-color:  #9466FE ;
+        height: .3rem !important;
+        width: 23rem;
+        display: block;
+        filter: drop-shadow(0 0 0.40rem #9466FE);
+        margin: 5% auto;
+    }
+   
+}
+
+@media screen and (max-width:450px) {
+    .project img{
+        width:max(45vw, 330px);
+        height:max(9vh, 230px) !important;
+    }
+
+    .box{
+        margin-right:25% !important;
+    }
+
+   
 }
 

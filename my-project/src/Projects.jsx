@@ -22,7 +22,7 @@ const Projects = () => {
            <div>
             <div className="project flex flex-row justify-center items-center ">
                 <img src={SiteMedico} className='w-[40rem] h-[20rem] object-cover'/>
-                <div className="w-[15rem] ms-[3%]">
+                <div className="box w-[15rem] ms-[3%]">
                     <h2 className='text-[#9466FE] font-[600] text-[1.6rem]'>Site para Médico</h2>
                     <div className="line bg-[#9466FE] h-[.1vh] w-[6rem] mb-[5%]"></div>
                     <div className='text-white'>
@@ -30,16 +30,17 @@ const Projects = () => {
                         <h3>CSS</h3>
                         <h3>JavaScript</h3>
                     </div>
-                    <div className='mt-[12%]'>
+                    <div className=' mt-[12%]'>
                    <a href="https://github.com/rafaelabou1999/site-medico"> <FontAwesomeIcon icon={faGithub} className='text-[1.2rem] text-[#fff]  pt-[1.5%]'/></a>
                    <a href="https://renatabourdettecardiologista.com/"> <FontAwesomeIcon icon={faCode} className='text-[1.2rem] text-[#fff] ms-[5%] pt-[1.5%] '/></a>
                     </div>
                 </div>
                 
            </div>
+           <div className="lineBox"></div>
             <div className="project flex flex-row justify-center items-center mt-[5%] ">
                 <img src={ReactSite} className='w-[40rem] h-[20rem] object-cover'/>
-                <div className="w-[15rem] ms-[3%]">
+                <div className="box w-[15rem] ms-[3%]">
                     <h2 className='text-[#9466FE] font-[600] text-[1.6rem]'>Primeiro site em React</h2>
                     <div className="line bg-[#9466FE] h-[.1vh] w-[6rem] mb-[5%]"></div>
                     <div className='text-white'>

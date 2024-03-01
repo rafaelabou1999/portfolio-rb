@@ -5,11 +5,11 @@ import './css/contact.css'
 const Contact = () => {
     return(
         <div id="contact" className="">
-            <div className="flex flex-row gap-[5%] justify-center gap-[10%]">
+            <div className="contactMain flex flex-row gap-[5%] justify-center gap-[10%]">
                 <div className="text-white text-[1.1rem]">
                     <h2 className='font-[700] text-[1.8rem] text-[#9466FE] drop-shadow-lg'>Contato</h2>
                     <div className="line1 h-[.1vh] w-[5rem] bg-[#9466FE] mb-[5%]"></div>
-                    <div className='mt-[20%]'>
+                    <div className='firstContact mt-[20%]'>
                         <a  className='cont p-[2%]  flex flex-row gap-[2%] items-center '>
                             <FontAwesomeIcon icon={faGithub} className=''/>
                             <h3>@rafaelabou1999</h3>

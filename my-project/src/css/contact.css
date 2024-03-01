@@ -4,3 +4,38 @@
     color:rgba(206, 203, 203, 0.89) !important;
     margin-top:10% !important;
 }
+
+@media  screen and (max-width:700px) {
+    .contactMain{
+        margin-top: 30% !important;
+    }
+    .contactMain img{
+        display: none;
+    }
+
+    .firstContact{
+        margin-top: 5% !important;
+    }
+
+    .line1{
+        margin-bottom: 15% !important;
+    }
+}
+@media  screen and (min-width:700px) and (max-width:900px) {
+    .contactMain{
+        margin-top: 30% !important;
+    }
+    .contactMain img{
+        display: block;
+        width:17rem;
+        height:17rem !important;
+    }
+
+    .firstContact{
+        margin-top: 5% !important;
+    }
+
+    .line1{
+        margin-bottom: 15% !important;
+    }
+}

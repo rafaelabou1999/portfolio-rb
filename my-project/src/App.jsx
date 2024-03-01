@@ -67,7 +67,7 @@ function App() {
         <Projects/>
         <Contact />
       </main>     
-     <footer className=' text-center text-white bg-[#322453] p-[.5%] mt-[10%]'>Desenvolvido por Rafaela Bourdette 2024</footer>
+     <footer className=' text-center text-[#dfe1e6] bg-[#322453] p-[1%] mt-[10%]'>Desenvolvido por Rafaela Bourdette 2024</footer>
     </div>
   )
 }
