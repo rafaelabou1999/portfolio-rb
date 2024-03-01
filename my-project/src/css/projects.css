@@ -6,37 +6,24 @@ button{
     transform: translateX(-50%);
 }
 
-/***********margin top **********/
-@media screen and (max-width:1570px){
+
+@media screen and (max-width:1300px) {
     #projects{
-        margin-top: 44% !important;
+        margin-top: 35rem;
     }
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:800px) {
     #projects{
-        margin-top: 54% !important;
+        margin-top: 50rem;
     }
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:480px){
     #projects{
-        margin-top: 64% !important;
+        margin-top: 95rem;
     }
 }
-
-@media screen and (max-width:730px) {
-    #projects{
-        margin-top: 100vh !important;
-    }
-}
-
-@media screen and (max-width:470px){
-    #projects{
-        margin-top: 190vh !important;
-    }
-}
-
 /**********************/
 @media screen and (max-width:1150px) {
     .project img{

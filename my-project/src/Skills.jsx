@@ -13,7 +13,7 @@ const Skills = () => {
             <div className="line h-[.3vh] w-[2.5rem] ms-[.3%] bg-[#9466FE]"></div>
            </div>
 
-           <div className='techStack z-10'>
+           <div className='techStack z-10 mb-[30%]'>
             <div className="item html flex flex-col justify-center items-center">  
               
                 <h3>HTML</h3>
