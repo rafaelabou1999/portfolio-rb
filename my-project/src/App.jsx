@@ -1,6 +1,6 @@
 import './App.css';
 import { Typewriter } from 'react-simple-typewriter';
-
+import { useState } from 'react';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -8,8 +8,22 @@ import Contact from './Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+
 function App() {
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  function open(){
+    setIsOpen(true);
+  }
+
+  function exit(){
+    setIsOpen(false);
+  }
+
+  function handleMenuItem(){
+    setIsOpen(false);
+  }
 
   return (
     <div>
@@ -30,7 +44,7 @@ function App() {
               <li className='hidden lg:inline-block md:hidden'><a href='#skills'>Habilidades</a></li>
               <li className='hidden lg:inline-block md:hidden'><a href='#contact'>Contato</a></li>
             </ul>
-        <div className='menuBurger md:block lg:hidden block   '>
+        <div style={{opacity: isOpen ? '0' : '1'}} className='menuBurger md:block lg:hidden block' onClick={open}>
           <div className="burgerLine w-[1.8rem] h-[.15vh]  bg-white"></div>
           <div className='mb-[23%]'></div>
           <div className="burgerLine w-[1.2rem] h-[.15vh] bg-white"></div>
@@ -62,13 +76,13 @@ function App() {
             </div>
           </div>  
         </div>
-        <div className="openMenu bg-[#1d162eee] fixed top-0 bottom-0 right-0 left-[70%] z-11">
-        <FontAwesomeIcon icon={faXmark} className='absolute right-[9%] top-[2%] text-[2rem] text-[#dbdad7]'/>
+        <div  style={{display: isOpen ? 'block' : 'none'}} className="openMenu bg-[#1d162eee] fixed top-0 bottom-0 right-0 left-[70%] z-11">
+        <FontAwesomeIcon icon={faXmark} onClick={exit} className='absolute right-[9%] top-[2%] text-[2rem] text-[#dbdad7]'/>
          <ul className='menuOpenResp flex flex-col text-[#dbdad7] font-[600] gap-[8%] z-20 ms-[15%] mt-[25%]'>
-              <li className='mb-[8%] text-[1.4rem]'><a href='#about'>Sobre</a></li>
-              <li className='mb-[8%] text-[1.4rem]'><a href='#projects'>Projetos</a></li>
-              <li className='mb-[8%] text-[1.4rem]'><a href='#skills'>Habilidades</a></li>
-              <li className='text-[1.4rem]'><a href='#contact'>Contato</a></li>
+              <li className='mb-[8%] text-[1.4rem]' onClick={handleMenuItem}><a href='#about'>Sobre</a></li>
+              <li className='mb-[8%] text-[1.4rem]'  onClick={handleMenuItem}><a href='#projects'>Projetos</a></li>
+              <li className='mb-[8%] text-[1.4rem]'  onClick={handleMenuItem}><a href='#skills'>Habilidades</a></li>
+              <li className='text-[1.4rem]'  onClick={handleMenuItem}><a href='#contact'>Contato</a></li>
             </ul>
 
         </div>
