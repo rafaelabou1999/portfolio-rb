@@ -269,6 +269,7 @@ main img{
   }
 }
 
+
 @media screen and (min-width:1025px) {
   .openMenu{
     display: none !important;
@@ -277,6 +278,61 @@ main img{
 
 @media screen and (max-width:730px) {
   .openMenu{
+    left: min(40%, 380px) !important;
+    bottom: 65% !important;
+  }
+  .menuOpenResp li{
+    font-size: max(3vw, 20px) !important;
+    margin-bottom: 6% !important;
+  }
+}
+
+
+@media screen and (max-width:730px) {
+  .openMenu{
+    left: min(40%, 380px) !important;
+    bottom: 65% !important;
+  }
+  .menuOpenResp li{
+    font-size: max(3vw, 20px) !important;
+    margin-bottom: 6% !important;
+  }
+}
+@media screen and (min-width:710px) and (max-width:900px){
+  .openMenu{
     left: 50% !important;
+    bottom: 55% !important;
+  }
+  .menuOpenResp li{
+    font-size: max(3vw, 20px) !important;
+    margin-bottom: 6% !important;
+  }
+}
+@media screen and (min-width:900px) {
+  .openMenu{
+    left: 60% !important;
+    bottom: 55% !important;
+  }
+ 
+}
+
+@media screen and (max-width:720px) {
+  .openMenu{
+    left: 50% !important;
+    bottom: 60% !important;
+  }
+  .menuOpenResp li{
+    font-size: max(3vw, 20px) !important;
+    margin-bottom: 6% !important;
+  }
+}
+@media screen and (max-width:500px) {
+  .openMenu{
+    left: 40% !important;
+    bottom: 62% !important;
+  }
+  .menuOpenResp li{
+    font-size: max(3vw, 20px) !important;
+    margin-bottom: 6% !important;
   }
 }
